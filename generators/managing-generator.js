@@ -1,7 +1,7 @@
 function * sumGenerator () {
   let x = yield 10
   let y = yield 10
-  return x * y
+  return x + y
 }
 
 function executor (generator) {
