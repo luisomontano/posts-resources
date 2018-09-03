@@ -16,7 +16,6 @@ function * getResources () {
 }
 
 function GeneratorRunner (gen, ...parameters) {
-  this.val = 10
   this.it = gen(parameters)
   this.handleError = this.handleError.bind(this)
   this.handleResult = this.handleResult.bind(this)
