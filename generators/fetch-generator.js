@@ -19,7 +19,6 @@ function GeneratorRunner (gen, ...parameters) {
   this.it = gen(parameters)
   this.handleError = this.handleError.bind(this)
   this.handleResult = this.handleResult.bind(this)
-  this.run = this.run.bind(this)
   this.runNext = this.runNext.bind(this)
 }
 
