@@ -38,15 +38,10 @@ GeneratorRunner.prototype.handleResult = function (nextIteration) {
   }
 }
 
-GeneratorRunner.prototype.run = function () {
-  return Promise.resolve()
-    .then(this.runNext)
-}
-
 GeneratorRunner.prototype.runNext = function (value) {
   const nextIteration = this.it.next(value)
   return this.handleResult(nextIteration)
 }
 
 const generatorGetResources = new GeneratorRunner(getResources)
-generatorGetResources.run()
+generatorGetResources.runNext()
