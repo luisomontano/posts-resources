@@ -1,0 +1,15 @@
+{
+  "name": "measuring-web-performance",
+  "version": "1.0.0",
+  "scripts": {
+    "delayed": "node delayed/server.js",
+    "six": "node six-request/server.js",
+    "memory": "node memory/server.js",
+    "audit": "lighthouse --only-categories=performance"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lighthouse": "^3.2.1"
+  }
+}
