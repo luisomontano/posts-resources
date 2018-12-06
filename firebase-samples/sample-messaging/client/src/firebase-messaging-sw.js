@@ -11,9 +11,9 @@ const messaging = firebase.messaging()
 
 messaging.setBackgroundMessageHandler(payload => {
   console.log(payload)
-  const notificationTitle = 'Background Message Title'
-  var notificationOptions = {
-    body: 'Background Message body.'
+  const notificationTitle = payload.data.title
+  const notificationOptions = {
+    body: payload.data.body
   }
 
   return self.registration.showNotification(notificationTitle,
