@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es5", "es2015", "dom", "scripthost"],
+    "experimentalDecorators": true
+  },
+  "include": [
+      "./sample-pokedex/**/*"
+  ]
+}
