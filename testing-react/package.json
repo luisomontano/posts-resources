@@ -1,0 +1,31 @@
+{
+  "name": "testing-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:enzyme": "jest -c tests-libraries/enzyme/jest.config.js",
+    "test:react-test-library": "jest -c tests-libraries/react-test-library/jest.config.js",
+    "test:test-renderer": "jest -c tests-libraries/test-renderer/jest.config.js",
+    "test:test-utils": "jest -c tests-libraries/test-renderer/jest.config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.0.2",
+    "jsdom": "^13.2.0",
+    "react-test-renderer": "^16.8.1",
+    "react-testing-library": "^5.5.3"
+  }
+}
