@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@polymer/polymer": "^3.1.0",
+    "lit-element": "^2.0.1"
+  }
+}
